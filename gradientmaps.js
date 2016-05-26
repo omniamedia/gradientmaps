@@ -294,7 +294,7 @@ window.GradientMaps = function(scope) {
             if (svgIsNew)
                 elem.parentElement.insertBefore(svg, elem);
         
-            var filterDecl = 'url(#' + filterID + ')';
+            var filterDecl = 'url(' + location.pathname + '#' + filterID + ')';
             elem.style['-webkit-filter'] = filterDecl;
             elem.style['filter'] = filterDecl;
         
